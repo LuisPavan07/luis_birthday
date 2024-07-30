@@ -1,0 +1,57 @@
+@use 'variables';
+
+.event {
+    padding: 80px 0 0 0;
+
+    &--date {
+        background-image: linear-gradient(variables.$blue1, variables.$blue2);
+    }
+
+    &--localization {
+        background-image: linear-gradient(variables.$blue2, variables.$green1);
+    }
+
+    &--entrance {
+        background-image: linear-gradient(variables.$green1, variables.$green2);
+    }
+
+    &--message {
+        background-image: linear-gradient(variables.$green2, variables.$green3);
+    }
+
+
+
+    .container {
+        display: block;
+        max-width: 360px;
+        gap: 40px;
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__image {
+        max-width: 360px;
+        border-radius: 48px;
+    }
+    
+    &__details {
+        &__title {
+            font-size: 28px;
+            font-weight: bold;
+            font-family: Lobster, sans-serif;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        &__description {
+            margin: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 28px;
+        }
+    }
+}
